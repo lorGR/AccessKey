@@ -1,7 +1,12 @@
 const Navbar = () => {
     return (
         <nav>
-            
+            <div className="left">
+                
+            </div>
+            <div className="right">
+
+            </div>
         </nav>
     );
 }
