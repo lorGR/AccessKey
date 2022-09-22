@@ -6,12 +6,17 @@
 @import "./features/infoTable/infoTable.scss";
 @import "./features/event/Event.scss";
 
-*{
+* {
   box-sizing: border-box;
 }
+
 .App {
   text-align: center;
-  .container {  display: grid;
+
+  .container {
+    height: 1024px;
+    width: 1440px;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
@@ -24,12 +29,21 @@
       "info-table-grid info-table-grid info-table-grid weekly-traffic-grid weekly-traffic-grid"
       "info-table-grid info-table-grid info-table-grid weekly-traffic-grid weekly-traffic-grid";
   }
-  
-  .events-grid { grid-area: events-grid; }
-  
-  .compeny-menu-grid { grid-area: compeny-menu-grid; }
-  
-  .info-table-grid { grid-area: info-table-grid; }
-  
-  .weekly-traffic-grid { grid-area: weekly-traffic-grid; }
+
+  .events-grid {
+    grid-area: events-grid;
+  }
+
+  .compeny-menu-grid {
+    grid-area: compeny-menu-grid;
+  }
+
+  .info-table-grid {
+    grid-area: info-table-grid;
+    margin-left: 1.9375rem;
+  }
+
+  .weekly-traffic-grid {
+    grid-area: weekly-traffic-grid;
+  }
 }

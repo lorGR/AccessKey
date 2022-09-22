@@ -22,7 +22,57 @@ const locationArrayExample = [
         city: "Tel Aviv",
         address: "vizman 14",
         doors: 12
-    }
+    },
+    {
+        locationName: "mindspace",
+        city: "Tel Aviv",
+        address: "vizman 14",
+        doors: 12
+    },
+    {
+        locationName: "mindspace",
+        city: "Tel Aviv",
+        address: "vizman 14",
+        doors: 12
+    },
+    {
+        locationName: "mindspace",
+        city: "Tel Aviv",
+        address: "vizman 14",
+        doors: 12
+    },
+    {
+        locationName: "mindspace",
+        city: "Tel Aviv",
+        address: "vizman 14",
+        doors: 12
+    },
+    {
+        locationName: "mindspace",
+        city: "Tel Aviv",
+        address: "vizman 14",
+        doors: 12
+    },
+    {
+        locationName: "mindspace",
+        city: "Tel Aviv",
+        address: "vizman 14",
+        doors: 12
+    },
+    {
+        locationName: "mindspace",
+        city: "Tel Aviv",
+        address: "vizman 14",
+        doors: 12
+    },
+    {
+        locationName: "mindspace",
+        city: "Tel Aviv",
+        address: "vizman 14",
+        doors: 12
+    },
+
+
 ]
 interface InfoTableProps {
     tableName: string,
@@ -56,11 +106,10 @@ export const InfoTable: React.FC<InfoTableProps> = (props) => {
                         <th>{props.tablecolumn3}</th>
                         <th></th>
                     </tr>
-                </table>
-                {locationArrayExample.map((location) => {
+                    {locationArrayExample.map((location) => {
                     return (
                         <tr>
-                            <input type="checkbox" />
+                            <td><input type="checkbox" /></td>
                             <td>{location.locationName}</td>
                             <td>{location.city}</td>
                             <td>{location.address}</td>
@@ -69,6 +118,8 @@ export const InfoTable: React.FC<InfoTableProps> = (props) => {
                         </tr>
                     )
                 })}
+                </table>
+                
 
             </div>
         </div>
