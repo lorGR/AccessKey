@@ -1,7 +1,8 @@
 import React from 'react'
-import { ReactComponent as FilterIcon} from "./Vectorfilter_svg.svg"
-import { ReactComponent as AddIcon} from "./add_squre_svg.svg"
-import { ReactComponent as DeleteIcon} from "./delete_squre_svg.svg"
+import { ReactComponent as FilterIcon} from "./assets/Vectorfilter_svg.svg"
+import { ReactComponent as AddIcon} from "./assets/add_squre_svg.svg"
+import { ReactComponent as DeleteIcon} from "./assets/delete_squre_svg.svg"
+import { ReactComponent as RightArrowIcon} from "./assets/right_arrow_svg.svg"
 
 const locationArrayExample = [
     {
@@ -33,7 +34,7 @@ interface InfoTableProps {
 
 export const InfoTable: React.FC<InfoTableProps> = (props) => {
   return (
-    <div>
+    <div className='table'>
         <div className='table__header'>
             <div className='table__header__left'>
                 <h2>{props.tableName}</h2>
@@ -44,7 +45,8 @@ export const InfoTable: React.FC<InfoTableProps> = (props) => {
                 <AddIcon/>
                 <DeleteIcon/>
             </div>
-            <div className='table__table'>
+        </div>
+        <div className='table__table'>
                 <table>
                     <tr>
                        <th>{props.tableName}</th> 
@@ -56,15 +58,16 @@ export const InfoTable: React.FC<InfoTableProps> = (props) => {
                 {locationArrayExample.map((location) => {
                     return(
                         <tr>
+                            <input type="checkbox" />
                             <td>{location.locationName}</td>
                             <td>{location.city}</td>
                             <td>{location.address}</td>
                             <td>{location.doors}</td>
+                            <td>{<RightArrowIcon/>}</td>
                         </tr>
                     ) })}
 
             </div>
-        </div>
     </div>
   )
 }
