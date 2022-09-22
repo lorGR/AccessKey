@@ -1,0 +1,27 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    .table__header {
+        display: flex;
+        width: max-content;
+        justify-content: space-between;
+
+        &__left {
+            display: flex;
+            width: 50%;
+        }
+
+        &__right {
+            display: flex;
+            width: 50%;
+            justify-content: flex-end;
+        }
+    }
+    &__table {
+        tr:nth-child(even) {background-color: #FAFAFA;};
+        th, td {
+            padding: 15px;
+            text-align: left;
+          }
+    }
+}
