@@ -67,7 +67,12 @@ const Events = () => {
         <div className="events__events">
             { companyEvents.map(event => {
                 return (
-                    <Event />
+                    <Event 
+                    status={event.status}
+                    worker={event.worker}
+                    event={event.event}
+                    door={event.door}
+                    time={event.time} />
                 )
             })}
         </div>
