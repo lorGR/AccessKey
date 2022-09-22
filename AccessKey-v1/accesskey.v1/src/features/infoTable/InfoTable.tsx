@@ -1,7 +1,7 @@
 import React from 'react'
 import { ReactComponent as FilterIcon} from "./Vectorfilter_svg.svg"
-import { ReactComponent as Addicon} from "./.svg"
-import { ReactComponent as FilterIcon} from "./Vectorfilter_svg.svg"
+import { ReactComponent as AddIcon} from "./add_squre_svg.svg"
+import { ReactComponent as DeleteIcon} from "./delete_squre_svg.svg"
 
 
 interface InfoTableProps {
