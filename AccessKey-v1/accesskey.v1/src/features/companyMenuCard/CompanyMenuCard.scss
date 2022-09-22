@@ -9,10 +9,11 @@
     gap: 0.625rem;
     p {
         margin: 0;
+        color: var(--text-silver);
     }
-    &__name {
+    // &__name {
 
-    }
+    // }
     &__number {
         font-weight: 600;
         font-size: 1.5rem;
