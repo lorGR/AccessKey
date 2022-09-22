@@ -1,0 +1,21 @@
+.events {
+    width: 32.375rem;
+    height: 30.3125rem;
+    background-color: #FFFFFF;
+    border-radius: .625rem;
+    padding: 1.875rem ;
+    margin-top: 2.4375rem;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+            margin: 0;
+            color: var(--text-silver);
+        }
+        &__btns {
+            display: flex;
+            gap: 0.8125rem;
+        }
+    }
+}
