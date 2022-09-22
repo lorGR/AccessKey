@@ -1,0 +1,20 @@
+.company-menu-card{
+    width: 17.375rem;
+    height: 6.760625rem;
+    background-color: #FFFFFF;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.625rem;
+    p {
+        margin: 0;
+    }
+    &__name {
+
+    }
+    &__number {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+}

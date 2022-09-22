@@ -7,13 +7,13 @@ const Navbar = () => {
     return (
         <nav>
             <div className="information">
-                <AccessKeyLogo />
+                <AccessKeyLogo className="information__logo" />
                 <HelpIcon />
                 <ContactIcon />
             </div>
-            <div className="user-informartion">
+            <div className="user-information">
                 <div className="user-information__profile-picture">
-                    
+                    {/* Missing user image */}
                 </div>
                 <p className="user-infomation__username">Yan Levi</p>
                 <ProfileDownArrowIcon />
