@@ -1,0 +1,26 @@
+nav {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8125rem 1.9375rem;
+    background-color: #FFFFFF;
+    .information{
+        display: flex;
+        align-items: center;
+        gap: 1.5625rem;
+        &__logo{
+            margin-right: 1.1825rem;
+        }
+    }
+    .user-information{
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        &__profile-picture{
+            width: 2rem;
+            height: 2rem;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    }
+}
