@@ -10,23 +10,35 @@ interface EventProps {
 }
 
 const Event: React.FC<EventProps> = ({ status, worker, event, door, time }) => {
+  let msg = "";
+  if (event === true) {
+    msg = "Unlocked the door";
+  } else {
+    msg = "failed to open at";
+  }
   return (
     <div className="event">
       {status === true &&
-        <p>
+        <div className="event__information">
           <DoorStatusTrueIcon />
-          {worker}
-          Unlocked the door 
-          {door} 
-          at {time}
-        </p>
+          <p>
+            <span className="event__information__worker">{worker} </span>
+            {msg}
+            <span className="event__information__door"> {door} </span>
+            at {' '}
+            {time}
+          </p>
+        </div>
       }
       {status === false &&
-        <p>
+        <div className="event__information">
           <DoorStatusFalseIcon />
-          {door}
-          failed to open at {time}
-        </p>
+          <p>
+            {door} {' '}
+            {msg} {' '}
+            {time}
+          </p>
+        </div>
       }
     </div>
   )
