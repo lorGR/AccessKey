@@ -1,5 +1,6 @@
 .table {
-    border: 1px solid black;
+    height: 3fr;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
@@ -18,11 +19,19 @@
 
         &__right {
             display: flex;
-            width: 50%;
-            justify-content: flex-end;
+            width: 6.93rem;
+            justify-content: space-around;
+            margin-right:1.75rem ;
         }
     }
     &__table {
+        input {
+            padding: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse:collapse;
+        }
         tr:nth-child(even) {
             background-color: #FAFAFA;
         };
