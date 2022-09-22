@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <div className="user-informartion">
                 <div className="user-information__profile-picture">
-                    <img src="" alt="" />
+                    
                 </div>
                 <p className="user-infomation__username">Yan Levi</p>
                 <ProfileDownArrowIcon />
